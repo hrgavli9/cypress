@@ -9,6 +9,6 @@ module.exports = defineConfig({
     }
   },
   //Added by harsha
-'watchForFileChanges': true
+'watchForFileChanges': false
 });
 

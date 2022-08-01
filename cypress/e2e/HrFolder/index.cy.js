@@ -1,9 +1,7 @@
 /// <reference types = "cypress" />
 describe('Automation Example',() => {
-    beforeEach(()=>{
+   
+    it('Base Website',()=>{
         cy.visit('http://automationpractice.com/index.php')
-    })
-    
-    
-    
+    }) 
 })

@@ -8,9 +8,12 @@ describe('ContactUs Testing', () => {
     it('Go to contact us page', () => {
         cy.get('#contact-link > a').click()
         cy.url().should('eq', 'http://automationpractice.com/index.php?controller=contact')
-        
-        
-        
+    })
+
+    it('Check For Blank Form',()=>{
+        cy.get('#submitMessage > span').click()
+        cy.wait(2000)
+        cy.get('ol > li').should('have.text','Invalid email address.')
     })
     
     it('submit contact us', () => {
