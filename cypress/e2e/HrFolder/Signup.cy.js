@@ -1,5 +1,4 @@
 /// <reference types = "cypress" />
-
 describe('Signup Testing',()=>{
 
     before(() => {
@@ -23,19 +22,7 @@ describe('Signup Testing',()=>{
         cy.wait(1000)
         cy.get('#email_create').type('.com{enter}')
         cy.wait(1000)
-        
-        // cy.get('ol > li').should('have.text', 'Password is required.')
     })
-
-    // it('Blank Signup Form',()=>{
-    //     cy.get('#submitAccount > span').click()
-    //     cy.get('.alert').contains('lastname is required.')
-    //     cy.get('.alert').contains('firstname is required.')
-    //     cy.get('.alert').contains('passwd is required.')
-    //     cy.get('.alert').contains('address1 is required.')
-    //     cy.get('.alert').contains('This country requires you to choose a State.')
-
-    // })
 
     it('Invalid Password',()=>{
         cy.get('#customer_firstname').type('harsha')

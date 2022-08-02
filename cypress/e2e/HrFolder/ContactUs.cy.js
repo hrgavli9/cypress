@@ -36,5 +36,5 @@ describe('ContactUs Testing', () => {
         cy.url().should('eq', 'http://automationpractice.com/index.php')
     })
     
-    
+
 })
